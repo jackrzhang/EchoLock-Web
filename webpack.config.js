@@ -20,12 +20,6 @@ var optionsConfig = {
       }
     ]
   },
-  plugins: [
-    new webpack.BannerPlugin('require("source-map-support").install();', {
-      raw: true,
-      entryOnly: false
-    })
-  ],
   resolve: {
     extensions: ['', '.js']
   },
@@ -48,12 +42,6 @@ var popupConfig = {
       }
     ]
   },
-  plugins: [
-    new webpack.BannerPlugin('require("source-map-support").install();', {
-      raw: true,
-      entryOnly: false
-    })
-  ],
   resolve: {
     extensions: ['', '.js']
   },
