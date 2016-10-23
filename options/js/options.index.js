@@ -2,10 +2,12 @@ var $ = require('jquery');
 
 function handleFormSubmissions() {
   function submitAccountSettings(firstName, lastName, email) {
+    // AJAX
     console.log('submit account settings');
   }
 
   function activateWebsite(siteUrl, emailUsername, password) {
+    // AJAX
     console.log('activate website');
   }
 

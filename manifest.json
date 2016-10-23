@@ -16,7 +16,6 @@
   "web_accessible_resources": ["options/options.html"],
 
   "permissions": [
-
+    "tabs"
   ]
-
 }
