@@ -10,7 +10,7 @@ var optionsConfig = {
     path: OPTIONS_DIR,
     filename: 'options.bundle.js'
   },
-  entry: path.join(OPTIONS_DIR, 'options.index.js'),
+  entry: path.join(OPTIONS_DIR, 'js/', 'options.index.js'),
   module: {
     loaders: [
       {
@@ -32,7 +32,7 @@ var popupConfig = {
     path: POPUP_DIR,
     filename: 'popup.bundle.js'
   },
-  entry: path.join(POPUP_DIR, 'popup.index.js'),
+  entry: path.join(POPUP_DIR, 'js/', 'popup.index.js'),
   module: {
     loaders: [
       {

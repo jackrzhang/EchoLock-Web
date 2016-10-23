@@ -6,6 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack --display-error-details --watch",
     "build": "./node_modules/.bin/webpack",
+    "clean": "rm **/*.bundle.js*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,9 @@
     "url": "https://github.com/jackrzhang/EchoLock-Web/issues"
   },
   "homepage": "https://github.com/jackrzhang/EchoLock-Web#readme",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
