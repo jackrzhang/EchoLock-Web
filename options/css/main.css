@@ -32,6 +32,26 @@ div.hori-line {
   border: .5px rgb(110, 110, 110) solid;
 }
 
+div.logged-in-as {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 45px auto 25px;
+}
+
+div.logout {
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+div.logout:hover {
+  cursor: pointer;
+}
+
+.logged-in-user {
+  color: rgb(0, 205, 0);
+}
+
 .pure-g {
   margin: 0 auto;
   max-width: 800px;

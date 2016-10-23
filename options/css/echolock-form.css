@@ -5,13 +5,18 @@ body {
 
 div.account-container,
 div.activated-websites-container {
-  margin: 40px 0;
+  margin: 5px 0 40px;
+}
+
+div.login-container {
+  margin: 25px 0;
 }
 
 h2.form-title {
   margin: 15px 0 20px;
   text-transform: none;
-  font-size: 28px;
+  font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 34px;
   font-weight: 100;
   letter-spacing: 1px;
   /*color: rgb(200, 220, 235);*/
@@ -50,7 +55,8 @@ button {
   border-radius: 4px;
   letter-spacing: 1px;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 200;
+  font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
   transition: all 0.1s ease;
 }
 

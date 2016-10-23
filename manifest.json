@@ -6,11 +6,6 @@
 
   "version": "1.0",
 
-  "background": {
-    "background_page": ["background/background.html"],
-    "scripts": ["background/background.bundle.js"]
-  },
-
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup/popup.html"
@@ -20,7 +15,16 @@
 
   "web_accessible_resources": ["options/options.html"],
 
+  "content_scripts": [
+    {
+      "matches": ["*://*.com/*"],
+      "js": ["content/content.bundle.js"],
+      "run_at": "document_end"
+    }
+  ],
+
   "permissions": [
+    "http://35.160.215.28/*",
     "tabs"
   ]
 }

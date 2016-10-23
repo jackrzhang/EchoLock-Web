@@ -13,12 +13,29 @@
 <body>
   <div class="header">
     <div class="header-logo"></div>​
-    <h2 class="header-caption">Hassle-free, voice-based two factor authentication using Amazon Echo. The safest, easiest way to log into websites.</h2>
+    <h2 class="header-caption">Hassle-free, voice-based two factor authentication using Amazon Echo. A safe, easy way to log into websites.</h2>
   </div>
 
   <div class="hori-line"></div>
 
-  <div class="pure-g">
+  <div class="logged-in-as">Logged in as <span class="logged-in-user">...</span></div>
+
+  <div class="login-container pure-u-1-2">
+    <h2 class="form-title">Log in</h2>
+    <div class="echolock-form">
+      <form class="login-form">
+        <div class="echolock-form-input email">
+          <input type="text" name="email" placeholder="Email" required="required"/>
+        </div>
+        <div class="echolock-form-input password">
+          <input type="password" name="password" placeholder="Password" required="required"/>
+        </div>
+        <button class="echolock-button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="pure-g user-forms">
     <div class="account-container pure-u-1-2">
       <h2 class="form-title">Account Settings</h2>
       <div class="echolock-form">
@@ -32,7 +49,7 @@
           <div class="echolock-form-input email">
             <input type="email" name="email" placeholder="Email" required="required"/>
           </div>
-          <button class="echolock-button">Submit</button>
+          <button class="echolock-button">Update</button>
         </form>
       </div>
     </div>

@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 var OPTIONS_DIR = path.join(__dirname, 'options/');
 var POPUP_DIR = path.join(__dirname, 'popup/');
-var BACKGROUND_DIR = path.join(__dirname, 'background/');
+var CONTENT_DIR = path.join(__dirname, 'content/');
 
 var optionsConfig = {
   name: 'options',
@@ -49,13 +49,13 @@ var popupConfig = {
   devtool: 'source-map'
 };
 
-var backgroundConfig = {
-  name: 'background',
+var contentConfig = {
+  name: 'content',
   output: {
-    path: path.join(BACKGROUND_DIR),
-    filename: 'background.bundle.js'
+    path: path.join(CONTENT_DIR),
+    filename: 'content.bundle.js'
   },
-  entry: path.join(BACKGROUND_DIR, 'background.index.js'),
+  entry: path.join(CONTENT_DIR, 'content.index.js'),
   module: {
     loaders: [
       {
@@ -74,5 +74,5 @@ var backgroundConfig = {
 module.exports = [
   optionsConfig,
   popupConfig,
-  backgroundConfig
+  contentConfig
 ];
