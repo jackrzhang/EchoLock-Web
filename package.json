@@ -1,0 +1,28 @@
+{
+  "name": "EchoLock-Web",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/webpack --display-error-details --watch",
+    "build": "./node_modules/.bin/webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackrzhang/EchoLock-Web.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackrzhang/EchoLock-Web/issues"
+  },
+  "homepage": "https://github.com/jackrzhang/EchoLock-Web#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2"
+  }
+}
