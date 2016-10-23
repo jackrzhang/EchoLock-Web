@@ -17,9 +17,26 @@ div.header-logo {
   margin: 20px auto;
 }
 
-h3.header-caption {
-  max-width: 450px;
+h2.header-caption {
+  max-width: 600px;
   margin: -40px auto 20px;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+div.hori-line {
+  height: 0;
+  padding: 0 10%;
+  max-width: 700px;
+  margin: 30px auto 10px;
+  border: .5px rgb(110, 110, 110) solid;
+}
+
+.pure-g {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.echolocked-sites-container {
+
 }

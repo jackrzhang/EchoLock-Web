@@ -6,51 +6,59 @@
   <meta name="description" content="EchoLock Options">
   <meta name="author" content="EchoLock">
 
-  <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel='stylesheet' href='css/main.css'></link>
 </head>
 
 <body>
   <div class="header">
     <div class="header-logo"></div>​
-    <h3 class="header-caption">The easiest way to log into websites. Hassle-free, verbal two factor authentication using Amazon Echo.</h3>
+    <h2 class="header-caption">Hassle-free, voice-based two factor authentication using Amazon Echo. The safest, easiest way to log into websites.</h2>
   </div>
 
-  <div class="account-container">
-    <h1 class="title">Account Options</h1>
-    <div class="echolock-form">
-      <form method="POST" action="/api/users">
-        <div class="echolock-form-input firstname">
-          <input type="text" name="firstname" placeholder="First Name" required="required"/>
-        </div>
-        <div class="echolock-form-input lastname">
-          <input type="text" name="lastname" placeholder="Last Name" required="required"/>
-        </div>
-        <div class="echolock-form-input email">
-          <input type="email" name="email" placeholder="Email" required="required"/>
-        </div>
-        <button class="echolock-button">Submit</button>
-      </form>
+  <div class="hori-line"></div>
+
+  <div class="pure-g">
+    <div class="account-container pure-u-1-2">
+      <h2 class="form-title">Account Settings</h2>
+      <div class="echolock-form">
+        <form class="account-form">
+          <div class="echolock-form-input firstname">
+            <input type="text" name="firstname" placeholder="First Name" required="required"/>
+          </div>
+          <div class="echolock-form-input lastname">
+            <input type="text" name="lastname" placeholder="Last Name" required="required"/>
+          </div>
+          <div class="echolock-form-input email">
+            <input type="email" name="email" placeholder="Email" required="required"/>
+          </div>
+          <button class="echolock-button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="activated-websites-container pure-u-1-2">
+      <h2 class="form-title">Website Activation</h2>
+      <div class="echolock-form">
+        <form class="website-form">
+          <div class="echolock-form-input site-url">
+            <input type="text" name="site-url" placeholder="Site URL" required="required"/>
+          </div>
+          <div class="echolock-form-input email-username">
+            <input type="text" name="email-username" placeholder="Email / Username" required="required"/>
+          </div>
+          <div class="echolock-form-input password">
+            <input type="password" name="password" placeholder="Password" required="required"/>
+          </div>
+          <button class="echolock-button">Activate</button>          
+        </form>
+      </div>
     </div>
   </div>
 
-  <div class="activated-websites-container">
-    <h1 class="title">Activated Websites</h1>
-    <div class="echolock-form">
-      <form method="POST" action="/api/users">
-        <div class="echolock-form-input firstname">
-          <input type="text" name="firstname" placeholder="First Name" required="required"/>
-        </div>
-        <div class="echolock-form-input lastname">
-          <input type="text" name="lastname" placeholder="Last Name" required="required"/>
-        </div>
-        <div class="echolock-form-input email">
-          <input type="email" name="email" placeholder="Email" required="required"/>
-        </div>
-        <button class="echolock-button">Submit</button>          
-      </form>
-    </div>
-
+  <div className="echolocked-sites-container">
+    <!-- <h2 class="sites-title">My Sites</h2> -->
+    <!-- <div class="sites-items"></div> -->
   </div>
 
   <script src="js/options.bundle.js"></script>

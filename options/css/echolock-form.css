@@ -3,21 +3,20 @@ body {
   text-align: center;
 }
 
-div.account-container {
-  margin-top: 130px;
-}
-
+div.account-container,
 div.activated-websites-container {
-  margin: 80px 0 100px;
+  margin: 40px 0;
 }
 
-h1.title {
+
+h2.form-title {
+  margin: 15px 0 20px;
   text-transform: none;
-  font-size: 43px;
+  font-size: 28px;
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   /*color: rgb(200, 220, 235);*/
-  color: #00D9EB;
+  color: rgb(5, 176, 207);
 }
 
 div.echolock-form {
@@ -26,10 +25,10 @@ div.echolock-form {
 
 div.echolock-form-input input {
   border-radius: 5px;
-  margin: 4px 0;
+  margin: 5px 0;
   width: 250px;
-  height: 45px;
-  padding: 10px 20px;
+  height: 50px;
+  padding: 15px 20px;
   border: 1px rgb(170, 170, 170) solid;
   text-align: left;
   font-weight: 400;
@@ -46,7 +45,7 @@ button {
   margin: 15px 0;
   width: 150px;
   padding: 14px;
-  background-color: #00D9EB;
+  background-color: rgb(5, 176, 207);;
   color: white;
   border: none;
   border-radius: 4px;
@@ -57,5 +56,5 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: white;
+  background-color: #00D9EB;
 }
