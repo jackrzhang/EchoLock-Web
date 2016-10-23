@@ -116,7 +116,18 @@ function checkUser() {
   }
 }
 
+function handleLogout() {
+  $('.logged-in-user').click(function() {
+    delete localStorage.echoLockLoggedIn;
+    delete localStorage.echoLockEmail;
+    delete localStorage.echoLockAPIKey;
+
+    location.reload();
+  })
+}
+
 $(document).ready(function() {
   checkUser();
   handleFormSubmissions();
+  handleLogout();
 });

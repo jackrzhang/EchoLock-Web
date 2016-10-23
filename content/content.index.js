@@ -38,12 +38,51 @@ function checkIfSiteIsEchoLocked(callback) {
   }
 }
 
+function fillOutLogin(email, password) {
+  $('input#email').val(email);
+  $('input#password').val(password);
+  $('button.submit.left').trigger("click");
+}
+
+function getCredentials(siteName, callback) {
+  var credentialData = {
+    // api_key: localStorage.echoLockAPIKey,
+    api_key: 'C9YQZ91S000DUMR3VS69GCAFV0GRBL', // hard-coded for now
+    site_name: siteName,
+  }
+
+  setInterval(function() {
+    $.ajax({
+      method: 'POST',
+      url: API + '/harambe/receive_credentials',
+      contentType: 'application/json',
+      data: JSON.stringify(credentialData),
+      success: function(data) {
+        console.log(data);
+        callback();
+      },
+      error: function(data) {
+        console.log('Awaiting response...');
+        callback();
+      },
+      dataType: 'json'
+    });
+  }.bind(this), 2000);
+}
+
 $(document).ready(function() {
   checkIfSiteIsEchoLocked(function(isEchoLocked) {
     if (isEchoLocked) {
       console.log('EchoLocked confirmed.');
-      checkForCredentials(function() {
-        
+      
+      var parser = document.createElement('a');
+      parser.href = window.location.href;
+      var siteName = parser.hostname.replace('.com', '');
+
+      getCredentials(siteName, function() {
+        setTimeout(function() {
+          fillOutLogin('jackrzhang@college.harvard.edu', 'password');
+        }, 3000);
       });
     } else {
       console.log('Site is not EchoLocked.');
