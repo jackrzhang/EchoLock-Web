@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  
+  "name": "EchoLock",
+  "description": "Hassle-free, two-factor authentication using Amazon Echo.",
+  
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup/popup.html",
+  },
+  "options_page": "options/options.html",
+
+  "permissions": [
+  ]
+}
