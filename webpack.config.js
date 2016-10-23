@@ -7,7 +7,7 @@ var POPUP_DIR = path.join(__dirname, 'popup/');
 var optionsConfig = {
   name: 'options',
   output: {
-    path: OPTIONS_DIR,
+    path: path.join(OPTIONS_DIR, 'js/'),
     filename: 'options.bundle.js'
   },
   entry: path.join(OPTIONS_DIR, 'js/', 'options.index.js'),
@@ -29,7 +29,7 @@ var optionsConfig = {
 var popupConfig = {
   name: 'popup',
   output: {
-    path: POPUP_DIR,
+    path: path.join(POPUP_DIR, 'js/'),
     filename: 'popup.bundle.js'
   },
   entry: path.join(POPUP_DIR, 'js/', 'popup.index.js'),

@@ -6,11 +6,53 @@
   <meta name="description" content="EchoLock Options">
   <meta name="author" content="EchoLock">
 
+  <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> -->
   <link rel='stylesheet' href='css/main.css'></link>
 </head>
 
 <body>
-  <h1>EchoLock Options</h1>
+  <div class="header">
+    <div class="header-logo"></div>​
+    <h3 class="header-caption">The easiest way to log into websites. Hassle-free, verbal two factor authentication using Amazon Echo.</h3>
+  </div>
+
+  <div class="account-container">
+    <h1 class="title">Account Options</h1>
+    <div class="echolock-form">
+      <form method="POST" action="/api/users">
+        <div class="echolock-form-input firstname">
+          <input type="text" name="firstname" placeholder="First Name" required="required"/>
+        </div>
+        <div class="echolock-form-input lastname">
+          <input type="text" name="lastname" placeholder="Last Name" required="required"/>
+        </div>
+        <div class="echolock-form-input email">
+          <input type="email" name="email" placeholder="Email" required="required"/>
+        </div>
+        <button class="echolock-button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="activated-websites-container">
+    <h1 class="title">Activated Websites</h1>
+    <div class="echolock-form">
+      <form method="POST" action="/api/users">
+        <div class="echolock-form-input firstname">
+          <input type="text" name="firstname" placeholder="First Name" required="required"/>
+        </div>
+        <div class="echolock-form-input lastname">
+          <input type="text" name="lastname" placeholder="Last Name" required="required"/>
+        </div>
+        <div class="echolock-form-input email">
+          <input type="email" name="email" placeholder="Email" required="required"/>
+        </div>
+        <button class="echolock-button">Submit</button>          
+      </form>
+    </div>
+
+  </div>
+
   <script src="js/options.bundle.js"></script>
 </body>
 

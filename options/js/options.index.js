@@ -1,2 +1,2 @@
-var jquery = require('jquery');
-console.log('e')
+var $ = require('jquery');
+
